@@ -1,0 +1,39 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<script> function moveNumbers(num) {
+    var txt=document.getElementById("result").value;
+    txt=txt + num;
+    document.getElementById("result").value=txt;
+    }
+</script>
+<style>
+input[type=button]{
+    background-color: #006080; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    font-size: 16px;
+}
+</style>
+Enter ID: <input type="text" id="result" size="20"> 
+<br> 
+<input type="button" value="1" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="2" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="3" name="no" onclick="moveNumbers(this.value)"> 
+<br> 
+<input type="button" value="4" name="no" onclick="moveNumbers(this.value)"> 
+<input type="button" value="5" name="no" onclick="moveNumbers(this.value)"> 
+<input type="button" value="6" name="no" onclick="moveNumbers(this.value)"> 
+<br> 
+<input type="button" value="7" name="no" onclick="moveNumbers(this.value)"> 
+<input type="button" value="8" name="no" onclick="moveNumbers(this.value)"> 
+<input type="button" value="9" name="no" onclick="moveNumbers(this.value)"> 
+<br>
+<input type="button" value="0" name="no" onclick="moveNumbers(this.value)"> 
+
+{% endblock %}

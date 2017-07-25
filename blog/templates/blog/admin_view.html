@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<style>
+.button{
+    background-color: #006080; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    font-size: 16px;
+}
+</style>
+
+<a class="button" href="{% url 'work_order' %}">Manage Work</a>
+<a class="button" href="{% url 'employee' %}">Employees</a>
+<a class="button" href="{% url 'table_view' %}">Tooling</a>
+<a class="button" href="{% url 'table_view' %}">Parts</a>
+<a class="button" href="{% url 'customer' %}">Customers</a>
+<a class="button" href="{% url 'machine' %}">Machines</a>
+<a class="button" href="{% url 'table_view' %}">Generate Work Order Report</a>
+<a class="button" href="{% url 'table_view' %}">Generate Hours Report</a>
+<a class="button" href="{% url 'table_test' %}">Table Test</a>
+
+{% endblock %}
